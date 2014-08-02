@@ -1,3 +1,10 @@
+//############################################
+// Copyright (C) Lyrebird Software 1996-2014
+// File: VorbisFile.d
+// Created: 2014-08-02 14:10:57
+// Modified: 2014-08-02 14:10:57
+//############################################
+
 /*
  *******************************************************************************************
  * Dgame (a D game framework) - Copyright (c) Randy Schütt
@@ -27,10 +34,8 @@ private {
 	import std.string : toStringz;
 	
 	import derelict.ogg.ogg;
-	import derelict.ogg.vorbis;
-	import derelict.ogg.vorbisfile;
-	import derelict.ogg.vorbisfiletypes;
-	import derelict.ogg.vorbistypes;
+	import derelict.vorbis.vorbis;
+	import derelict.vorbis.file;
 
 	import Dgame.Internal.Log;
 	import Dgame.Internal.Unique;

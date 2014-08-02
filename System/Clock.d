@@ -1,3 +1,10 @@
+//############################################
+// Copyright (C) Lyrebird Software 1996-2014
+// File: Clock.d
+// Created: 2014-08-02 14:11:38
+// Modified: 2014-08-02 14:12:14
+//############################################
+
 /*
  *******************************************************************************************
  * Dgame (a D game framework) - Copyright (c) Randy Schütt
@@ -82,8 +89,9 @@ struct Time {
 		const float min = time.minutes;
 		const float sec = time.seconds;
 
-		time.minutes -= floor(time.hours) * 60;
-		time.minutes = floor(time.minutes);
+        
+		time.minutes -= floor(float(time.hours)) * 60;
+		time.minutes = floor(float(time.minutes));
 		time.seconds -= floor(min) * 60;
 		time.msecs -= floor(sec) * 1000;
 

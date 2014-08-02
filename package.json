@@ -1,0 +1,35 @@
+{
+	"targetName": "dgame",
+	"workingDirectory": "lib",
+	"version": "~master",
+	"description": "Dgame",
+	"authors": [
+		"Randy Schütt"
+	],
+	"dependencies": {
+        "derelict-sdl2":">=1.2.4",
+        "derelict-gl3":">=1.0.4",
+        "derelict-vorbis":"~master",
+        "derelict-ft":"~master",
+        "derelict-al":">=0.9.0",
+		"derelict-ogg": "~master",
+		"derelict-util": "~master"
+	},
+	"importPaths": [
+		"./"
+	],
+	"license": "zlib",
+	"configurations": [
+		{
+			"targetType": "library",
+			"name": "library"
+		}
+	],
+	"targetPath": "lib",
+	"homepage": "http://dgame-dev.de/",
+	"sourcePaths": [
+		"./"
+	],
+	"name": "dgame"
+}
+
